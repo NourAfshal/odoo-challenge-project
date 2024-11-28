@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="menu_customer_inventory_root" name="Customer Inventory" sequence="10" parent="sales_team.menu_sale_root"/>
+    <menuitem id="menu_customer_inventory" name="Inventory Monitoring" parent="menu_customer_inventory_root" action="action_customer_inventory" sequence="10"/>
+</odoo>

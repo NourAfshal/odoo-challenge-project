@@ -1,0 +1,8 @@
+<odoo>
+    <record id="action_sales_dashboard" model="ir.actions.act_window">
+        <field name="name">Sales Dashboard</field>
+        <field name="res_model">sales.dashboard</field>
+        <field name="view_mode">form,tree</field>
+        <field name="help">Monitor sales routes, visit summaries, and inventory levels.</field>
+    </record>
+</odoo>

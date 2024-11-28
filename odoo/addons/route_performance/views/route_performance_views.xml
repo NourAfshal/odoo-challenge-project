@@ -1,0 +1,34 @@
+<odoo>
+    <record id="view_route_optimization_form" model="ir.ui.view">
+        <field name="name">route.optimization.form</field>
+        <field name="model">route.optimization</field>
+        <field name="arch" type="xml">
+            <form string="Route Optimization">
+                <sheet>
+                    <group>
+                        <field name="sales_rep_id"/>
+                        <field name="customer_ids" widget="many2many_tags"/>
+                    </group>
+                    <field name="route_plan" widget="html"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_performance_insights_form" model="ir.ui.view">
+        <field name="name">performance.insights.form</field>
+        <field name="model">performance.insights</field>
+        <field name="arch" type="xml">
+            <form string="Performance Insights">
+                <sheet>
+                    <group>
+                        <field name="sales_rep_id"/>
+                        <field name="completed_visits"/>
+                        <field name="restocks_initiated"/>
+                        <field name="products_sold"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

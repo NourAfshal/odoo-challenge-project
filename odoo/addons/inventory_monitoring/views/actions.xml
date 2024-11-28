@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_customer_inventory" model="ir.actions.act_window">
+        <field name="name">Customer Inventory</field>
+        <field name="res_model">customer.inventory</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,26 @@
+<odoo>
+    <record id="view_sales_dashboard" model="ir.ui.view">
+        <field name="name">sales.dashboard.form</field>
+        <field name="model">sales.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Sales Dashboard">
+                <sheet>
+                    <group>
+                        <field name="sales_rep_id" widget="many2one"/>
+                    </group>
+                    <notebook>
+                        <page string="Route Coverage">
+                            <field name="route_coverage" widget="html"/>
+                        </page>
+                        <page string="Visit Summary">
+                            <field name="visit_summary" widget="html"/>
+                        </page>
+                        <page string="Inventory Status">
+                            <field name="inventory_status" widget="html"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

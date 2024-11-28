@@ -1,0 +1,13 @@
+<odoo>
+    <record id="action_route_optimization" model="ir.actions.act_window">
+        <field name="name">Route Optimization</field>
+        <field name="res_model">route.optimization</field>
+        <field name="view_mode">form,tree</field>
+    </record>
+
+    <record id="action_performance_insights" model="ir.actions.act_window">
+        <field name="name">Performance Insights</field>
+        <field name="res_model">performance.insights</field>
+        <field name="view_mode">form,tree</field>
+    </record>
+</odoo>

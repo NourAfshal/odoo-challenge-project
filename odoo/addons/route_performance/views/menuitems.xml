@@ -1,0 +1,5 @@
+<odoo>
+    <menuitem id="menu_route_performance_root" name="Route & Performance" sequence="10" parent="sales_team.menu_sale_root"/>
+    <menuitem id="menu_route_optimization" name="Route Optimization" parent="menu_route_performance_root" action="action_route_optimization" sequence="10"/>
+    <menuitem id="menu_performance_insights" name="Performance Insights" parent="menu_route_performance_root" action="action_performance_insights" sequence="20"/>
+</odoo>

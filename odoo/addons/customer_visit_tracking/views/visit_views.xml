@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_customer_visit_form" model="ir.ui.view">
+        <field name="name">customer.visit.form</field>
+        <field name="model">customer.visit</field>
+        <field name="arch" type="xml">
+            <form string="Customer Visit">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="sales_rep_id" readonly="1"/>
+                        <field name="scheduled_date"/>
+                        <field name="visit_status" readonly="1"/>
+                        <field name="check_in_time" readonly="1"/>
+                    </group>
+                    <group string="Details">
+                        <field name="visit_objectives"/>
+                        <field name="visit_report"/>
+                        <field name="feedback"/>
+                        <field name="inventory_levels"/>
+                        <field name="sales_discussions"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Check In" type="object" name="action_check_in" states="scheduled" class="btn-primary"/>
+                    <button string="Mark as Completed" type="object" name="action_complete_visit" states="in_progress" class="btn-success"/>
+                    <button string="Cancel" type="object" name="action_cancel" states="scheduled,in_progress" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_customer_visit_tree" model="ir.ui.view">
+        <field name="name">customer.visit.tree</field>
+        <field name="model">customer.visit</field>
+        <field name="arch" type="xml">
+            <tree string="Customer Visits">
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="sales_rep_id"/>
+                <field name="scheduled_date"/>
+                <field name="visit_status"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

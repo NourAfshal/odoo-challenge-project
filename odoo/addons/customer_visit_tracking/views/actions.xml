@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_customer_visit" model="ir.actions.act_window">
+        <field name="name">Customer Visits</field>
+        <field name="res_model">customer.visit</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

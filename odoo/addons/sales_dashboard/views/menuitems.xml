@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="menu_sales_dashboard_root" name="Sales Monitoring" sequence="10" parent="sales_team.menu_sale_root"/>
+    <menuitem id="menu_sales_dashboard" name="Sales Dashboard" parent="menu_sales_dashboard_root" action="action_sales_dashboard" sequence="10"/>
+</odoo>
